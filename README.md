@@ -43,64 +43,35 @@ This project consists of four different scripts to handle dataset preprocessing,
 ---
 
 ## 5. Usage Instructions
+### A. using already preprocessed data
+1. Use pandas to load gene expression and mirna datasets.
 
-1. *Load Datasets:*  
-   Use pandas to load gene expression and phenotype datasets.
+2. Use DEG_code.ipynb for model traning, testing, and identifying outlier genes. This uses already available data from the Limma analysis using Limma.R
 
-2. *Separate by Race:*  
-   Use Race.ipynb to filter and separate samples by race (e.g., White).
+3. Use FS_code.ipynb for model traning, testing, and identifying outlier genes. This uses preprocessed data from Dataset_Preparation.ipynb
 
-3. *DEG Analysis:*  
-   Use DEGdeseq2.ipynb for preprocessing and identifying outlier genes.
+### B. using raw data
+1. Download dataset from UCSC XenaBrowser
+ 
+2. Use Dataset_Preparation.ipynb to preprocess raw data and export it into .csv
 
-4. *Combine Datasets:*  
-   Use Combine dataset.ipynb to merge DEG results with raw data based on Ensembl_ID.
+3. Use Limma.R to perform DEG analysis using Limma and export the results
 
-5. *ROC Analysis:*  
-   Use ROC analysis.ipynb to analyze data139.csv and select significant genes.
+4. Use DEG_code.ipynb for model traning, testing, and identifying outlier genes. This uses data from the Limma analysis in step 3
 
-6. *Modeling - White Race:*  
-   Load the following CSV files in ResultsWhiteRace.py:
-   - data13.csv
-   - data139.csv
-   - data4.csv
-   - data7.csv
-
-7. *Model Validation - Black Race:*  
-   Load the following CSV files in ResultsBlackRace.py:
-   - Datablack13.csv
-   - Datablack139.csv
-   - Datablack7.csv
-   - Datablack4.csv
+5. Use FS_code.ipynb for model traning, testing, and identifying outlier genes. This uses preprocessed data from step 2
 
 ---
 
 ## 6. Requirements
-pip install pandas numpy scikit-learn imbalanced-learn. 
-
 - pandas for load dataset
 
-- Scikit-learn for GaussianNB, LabelEncoder, Traintestsplit, gridsearch, accuracy score and classification report
+- Scikit-learn for Preprocessing functions, LabelEncoder, Traintestsplit, gridsearch, accuracy score and classification report
 
-- imbalanced-learn for using balancing technique
-
-## 7. Methodology for Code Usage
-   1. Use Race.ipynb to filter data by race.
-
-   2. Perform DEG analysis using DEGdeseq2.ipynb.
-
-   3. Use Combine dataset.ipynb to merge DEG results with raw data.
-
-   4. For 139 features, run ROC analysis.ipynb to further filter genes.
-
-   5. Train the model using ResultsWhiteRace.py.
-
-   6. Validate the model using ResultsBlackRace.py.
-
-## 8. Citation
+## 7. Citation
 Not applicable.
 
-## 9. License & Contribution Guidelines
+## 8. License & Contribution Guidelines
 Not applicable.
 
-## 10. Code Repository or DOI
+## 9. Code Repository or DOI
