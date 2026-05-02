@@ -44,7 +44,7 @@ This project consists of four different scripts to handle dataset preprocessing,
 
 ## 5. Usage Instructions
 ### A. using already preprocessed data
-1. Use pandas to load gene expression and mirna datasets.
+1. Extract and Use pandas to load gene expression and mirna datasets from dataset2.zip.
 
 2. Use DEG_code.ipynb for model traning, testing, and identifying outlier genes. This uses already available data from the Limma analysis using Limma.R
 
@@ -64,9 +64,12 @@ This project consists of four different scripts to handle dataset preprocessing,
 ---
 
 ## 6. Requirements
-- numpy and pandas for loading and processing dataset
-- matplotlib and seaborn for generating and styling plots
-- Scikit-learn for Preprocessing functions, LabelEncoder, Traintestsplit, gridsearch, accuracy score and classification report
+| numpy==1.26.1       | loading and processing dataset |
+| pandas==1.4.4       | loading and processing dataset |
+| matplotlib==0.11.2  | generating and styling plots |
+| seaborn==3.5.2      | generating and styling plots |
+| sklearn==1.0.2      |  Preprocessing functions, LabelEncoder, Traintestsplit, gridsearch, accuracy score and classification report|
+
 
 ## 7. Citation
 Not applicable.
