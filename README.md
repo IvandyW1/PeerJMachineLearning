@@ -64,8 +64,8 @@ This project consists of four different scripts to handle dataset preprocessing,
 ---
 
 ## 6. Requirements
-- pandas for load dataset
-
+- numpy and pandas for loading and processing dataset
+- matplotlib and seaborn for generating and styling plots
 - Scikit-learn for Preprocessing functions, LabelEncoder, Traintestsplit, gridsearch, accuracy score and classification report
 
 ## 7. Citation
