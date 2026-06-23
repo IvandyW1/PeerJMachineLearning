@@ -70,12 +70,19 @@ This project consists of four different scripts to handle dataset preprocessing,
 | seaborn==3.5.2      | generating and styling plots |
 | sklearn==1.0.2      |  Preprocessing functions, LabelEncoder, Traintestsplit, gridsearch, accuracy score and classification report|
 
+## 7. Methodology
+1. Data Acquisition: Download raw gene, miRNA, and phenotype datasets from UCSC XenaBrowser.
+2. Preprocessing: Clean and format datasets using Python (pandas, numpy) with Dataset_Preparation.ipynb.
+3. DEG Analysis: Apply limma (R) to identify differentially expressed genes using Limma.R and DEG_code.ipynb.
+4. Feature Selection: Use wrapper methods (e.g., LASSO, RFE) to refine gene/miRNA features using FS_code.ipynb.
+5. Model Development: Train machine learning classifiers (Logistic Regression, Random Forest) (included in DEG_code.ipynb and FS_code.ipynb).
 
-## 7. Citation
+
+## 8. Citation
 Not applicable.
 
-## 8. License & Contribution Guidelines
+## 9. License & Contribution Guidelines
 Not applicable.
 
-## 9. Code Repository or DOI
+## 10. Code Repository or DOI
 [![DOI](https://zenodo.org/badge/1186162661.svg)](https://doi.org/10.5281/zenodo.19112207)
